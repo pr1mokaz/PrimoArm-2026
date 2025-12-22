@@ -1,0 +1,22 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/jeff/ros2_ws/build/primo_dynamixel_driver",
+        "/home/jeff/ros2_ws/install/primo_dynamixel_driver/lib/python3.10/site-packages",
+        "/home/jeff/ros2_ws/build/primo-arm-r01",
+        "/home/jeff/ros2_ws/install/primo-arm-r01/lib/python3.10/site-packages",
+        "/home/jeff/ros2_ws/build/primo-arm-r00",
+        "/home/jeff/ros2_ws/install/primo-arm-r00/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/jeff/ros2_ws/build/primo_dynamixel_driver",
+        "/home/jeff/ros2_ws/install/primo_dynamixel_driver/lib/python3.10/site-packages",
+        "/home/jeff/ros2_ws/build/primo-arm-r01",
+        "/home/jeff/ros2_ws/install/primo-arm-r01/lib/python3.10/site-packages",
+        "/home/jeff/ros2_ws/build/primo-arm-r00",
+        "/home/jeff/ros2_ws/install/primo-arm-r00/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}
