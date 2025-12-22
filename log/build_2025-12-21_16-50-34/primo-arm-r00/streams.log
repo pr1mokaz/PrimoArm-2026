@@ -1,0 +1,37 @@
+[1.113s] Invoking command in '/home/jeff/ros2_ws/src/primo-arm-r00': PYTHONPATH=/home/jeff/ros2_ws/build/primo-arm-r00/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jeff/ros2_ws/install/primo-arm-r00/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/primo-arm-r00 build --build-base /home/jeff/ros2_ws/build/primo-arm-r00/build install --record /home/jeff/ros2_ws/build/primo-arm-r00/install.log --single-version-externally-managed install_data
+[1.503s] running egg_info
+[1.504s] creating ../../build/primo-arm-r00/primo_arm_r00.egg-info
+[1.504s] writing ../../build/primo-arm-r00/primo_arm_r00.egg-info/PKG-INFO
+[1.504s] writing dependency_links to ../../build/primo-arm-r00/primo_arm_r00.egg-info/dependency_links.txt
+[1.505s] writing entry points to ../../build/primo-arm-r00/primo_arm_r00.egg-info/entry_points.txt
+[1.505s] writing requirements to ../../build/primo-arm-r00/primo_arm_r00.egg-info/requires.txt
+[1.505s] writing top-level names to ../../build/primo-arm-r00/primo_arm_r00.egg-info/top_level.txt
+[1.505s] writing manifest file '../../build/primo-arm-r00/primo_arm_r00.egg-info/SOURCES.txt'
+[1.508s] reading manifest file '../../build/primo-arm-r00/primo_arm_r00.egg-info/SOURCES.txt'
+[1.509s] writing manifest file '../../build/primo-arm-r00/primo_arm_r00.egg-info/SOURCES.txt'
+[1.510s] running build
+[1.510s] running build_py
+[1.510s] creating /home/jeff/ros2_ws/build/primo-arm-r00/build
+[1.510s] creating /home/jeff/ros2_ws/build/primo-arm-r00/build/lib
+[1.511s] creating /home/jeff/ros2_ws/build/primo-arm-r00/build/lib/primo-arm-r00
+[1.511s] copying primo-arm-r00/__init__.py -> /home/jeff/ros2_ws/build/primo-arm-r00/build/lib/primo-arm-r00
+[1.511s] running install
+[1.512s] running install_lib
+[1.513s] creating /home/jeff/ros2_ws/install/primo-arm-r00/lib/python3.10/site-packages/primo-arm-r00
+[1.513s] copying /home/jeff/ros2_ws/build/primo-arm-r00/build/lib/primo-arm-r00/__init__.py -> /home/jeff/ros2_ws/install/primo-arm-r00/lib/python3.10/site-packages/primo-arm-r00
+[1.514s] byte-compiling /home/jeff/ros2_ws/install/primo-arm-r00/lib/python3.10/site-packages/primo-arm-r00/__init__.py to __init__.cpython-310.pyc
+[1.514s] running install_data
+[1.515s] creating /home/jeff/ros2_ws/install/primo-arm-r00/share/ament_index
+[1.515s] creating /home/jeff/ros2_ws/install/primo-arm-r00/share/ament_index/resource_index
+[1.515s] creating /home/jeff/ros2_ws/install/primo-arm-r00/share/ament_index/resource_index/packages
+[1.515s] copying resource/primo-arm-r00 -> /home/jeff/ros2_ws/install/primo-arm-r00/share/ament_index/resource_index/packages
+[1.515s] copying package.xml -> /home/jeff/ros2_ws/install/primo-arm-r00/share/primo-arm-r00
+[1.516s] creating /home/jeff/ros2_ws/install/primo-arm-r00/share/primo-arm-r00/launch
+[1.516s] copying launch/display.launch.py -> /home/jeff/ros2_ws/install/primo-arm-r00/share/primo-arm-r00/launch
+[1.516s] creating /home/jeff/ros2_ws/install/primo-arm-r00/share/primo-arm-r00/urdf
+[1.516s] copying urdf/arm.urdf -> /home/jeff/ros2_ws/install/primo-arm-r00/share/primo-arm-r00/urdf
+[1.516s] running install_egg_info
+[1.519s] Copying ../../build/primo-arm-r00/primo_arm_r00.egg-info to /home/jeff/ros2_ws/install/primo-arm-r00/lib/python3.10/site-packages/primo_arm_r00-0.0.0-py3.10.egg-info
+[1.521s] running install_scripts
+[1.553s] writing list of installed files to '/home/jeff/ros2_ws/build/primo-arm-r00/install.log'
+[1.590s] Invoked command in '/home/jeff/ros2_ws/src/primo-arm-r00' returned '0': PYTHONPATH=/home/jeff/ros2_ws/build/primo-arm-r00/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jeff/ros2_ws/install/primo-arm-r00/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/primo-arm-r00 build --build-base /home/jeff/ros2_ws/build/primo-arm-r00/build install --record /home/jeff/ros2_ws/build/primo-arm-r00/install.log --single-version-externally-managed install_data

@@ -1,0 +1,12 @@
+package.xml
+setup.cfg
+setup.py
+launch/display.launch.py
+primo_arm_r01.egg-info/PKG-INFO
+primo_arm_r01.egg-info/SOURCES.txt
+primo_arm_r01.egg-info/dependency_links.txt
+primo_arm_r01.egg-info/entry_points.txt
+primo_arm_r01.egg-info/requires.txt
+primo_arm_r01.egg-info/top_level.txt
+primo_arm_r01.egg-info/zip-safe
+urdf/primio-arm-r01.urdf.xacro

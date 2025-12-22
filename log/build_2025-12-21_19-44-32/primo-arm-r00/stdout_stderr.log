@@ -1,0 +1,19 @@
+running egg_info
+writing ../../build/primo-arm-r00/primo_arm_r00.egg-info/PKG-INFO
+writing dependency_links to ../../build/primo-arm-r00/primo_arm_r00.egg-info/dependency_links.txt
+writing entry points to ../../build/primo-arm-r00/primo_arm_r00.egg-info/entry_points.txt
+writing requirements to ../../build/primo-arm-r00/primo_arm_r00.egg-info/requires.txt
+writing top-level names to ../../build/primo-arm-r00/primo_arm_r00.egg-info/top_level.txt
+reading manifest file '../../build/primo-arm-r00/primo_arm_r00.egg-info/SOURCES.txt'
+writing manifest file '../../build/primo-arm-r00/primo_arm_r00.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+copying urdf/arm.urdf.xacro -> /home/jeff/ros2_ws/install/primo-arm-r00/share/primo-arm-r00/urdf
+running install_egg_info
+removing '/home/jeff/ros2_ws/install/primo-arm-r00/lib/python3.10/site-packages/primo_arm_r00-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/primo-arm-r00/primo_arm_r00.egg-info to /home/jeff/ros2_ws/install/primo-arm-r00/lib/python3.10/site-packages/primo_arm_r00-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/jeff/ros2_ws/build/primo-arm-r00/install.log'

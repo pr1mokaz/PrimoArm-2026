@@ -1,0 +1,21 @@
+[1.010s] Invoking command in '/home/jeff/ros2_ws/src/primo-arm-r00': PYTHONPATH=/home/jeff/ros2_ws/build/primo-arm-r00/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jeff/ros2_ws/install/primo-arm-r00/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/primo-arm-r00 build --build-base /home/jeff/ros2_ws/build/primo-arm-r00/build install --record /home/jeff/ros2_ws/build/primo-arm-r00/install.log --single-version-externally-managed install_data
+[1.399s] running egg_info
+[1.400s] writing ../../build/primo-arm-r00/primo_arm_r00.egg-info/PKG-INFO
+[1.401s] writing dependency_links to ../../build/primo-arm-r00/primo_arm_r00.egg-info/dependency_links.txt
+[1.401s] writing entry points to ../../build/primo-arm-r00/primo_arm_r00.egg-info/entry_points.txt
+[1.401s] writing requirements to ../../build/primo-arm-r00/primo_arm_r00.egg-info/requires.txt
+[1.401s] writing top-level names to ../../build/primo-arm-r00/primo_arm_r00.egg-info/top_level.txt
+[1.404s] reading manifest file '../../build/primo-arm-r00/primo_arm_r00.egg-info/SOURCES.txt'
+[1.406s] writing manifest file '../../build/primo-arm-r00/primo_arm_r00.egg-info/SOURCES.txt'
+[1.406s] running build
+[1.406s] running build_py
+[1.407s] running install
+[1.407s] running install_lib
+[1.409s] running install_data
+[1.409s] copying launch/display.launch.py -> /home/jeff/ros2_ws/install/primo-arm-r00/share/primo-arm-r00/launch
+[1.410s] running install_egg_info
+[1.412s] removing '/home/jeff/ros2_ws/install/primo-arm-r00/lib/python3.10/site-packages/primo_arm_r00-0.0.0-py3.10.egg-info' (and everything under it)
+[1.413s] Copying ../../build/primo-arm-r00/primo_arm_r00.egg-info to /home/jeff/ros2_ws/install/primo-arm-r00/lib/python3.10/site-packages/primo_arm_r00-0.0.0-py3.10.egg-info
+[1.415s] running install_scripts
+[1.450s] writing list of installed files to '/home/jeff/ros2_ws/build/primo-arm-r00/install.log'
+[1.486s] Invoked command in '/home/jeff/ros2_ws/src/primo-arm-r00' returned '0': PYTHONPATH=/home/jeff/ros2_ws/build/primo-arm-r00/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jeff/ros2_ws/install/primo-arm-r00/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/primo-arm-r00 build --build-base /home/jeff/ros2_ws/build/primo-arm-r00/build install --record /home/jeff/ros2_ws/build/primo-arm-r00/install.log --single-version-externally-managed install_data

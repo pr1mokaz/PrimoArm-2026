@@ -1,0 +1,15 @@
+running develop
+running egg_info
+writing primo_dynamixel_driver.egg-info/PKG-INFO
+writing dependency_links to primo_dynamixel_driver.egg-info/dependency_links.txt
+writing entry points to primo_dynamixel_driver.egg-info/entry_points.txt
+writing requirements to primo_dynamixel_driver.egg-info/requires.txt
+writing top-level names to primo_dynamixel_driver.egg-info/top_level.txt
+reading manifest file 'primo_dynamixel_driver.egg-info/SOURCES.txt'
+writing manifest file 'primo_dynamixel_driver.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/jeff/ros2_ws/install/primo_dynamixel_driver/lib/python3.10/site-packages/primo-dynamixel-driver.egg-link (link to .)
+Installing joint_publisher script to /home/jeff/ros2_ws/install/primo_dynamixel_driver/lib/primo_dynamixel_driver
+
+Installed /home/jeff/ros2_ws/build/primo_dynamixel_driver
+running symlink_data

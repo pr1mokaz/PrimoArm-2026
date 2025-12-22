@@ -1,0 +1,16 @@
+[1.147s] Invoking command in '/home/jeff/ros2_ws/build/primo-arm-r00': PYTHONPATH=/home/jeff/ros2_ws/build/primo-arm-r00/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jeff/ros2_ws/install/primo-arm-r00/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jeff/ros2_ws/build/primo-arm-r00/build --no-deps symlink_data
+[1.622s] running develop
+[1.912s] running egg_info
+[1.912s] writing primo_arm_r00.egg-info/PKG-INFO
+[1.913s] writing dependency_links to primo_arm_r00.egg-info/dependency_links.txt
+[1.913s] writing entry points to primo_arm_r00.egg-info/entry_points.txt
+[1.913s] writing requirements to primo_arm_r00.egg-info/requires.txt
+[1.914s] writing top-level names to primo_arm_r00.egg-info/top_level.txt
+[1.917s] reading manifest file 'primo_arm_r00.egg-info/SOURCES.txt'
+[1.918s] writing manifest file 'primo_arm_r00.egg-info/SOURCES.txt'
+[1.921s] running build_ext
+[1.921s] Creating /home/jeff/ros2_ws/install/primo-arm-r00/lib/python3.10/site-packages/primo-arm-r00.egg-link (link to .)
+[1.922s] 
+[1.923s] Installed /home/jeff/ros2_ws/build/primo-arm-r00
+[1.923s] running symlink_data
+[1.971s] Invoked command in '/home/jeff/ros2_ws/build/primo-arm-r00' returned '0': PYTHONPATH=/home/jeff/ros2_ws/build/primo-arm-r00/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jeff/ros2_ws/install/primo-arm-r00/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jeff/ros2_ws/build/primo-arm-r00/build --no-deps symlink_data

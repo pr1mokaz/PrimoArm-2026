@@ -1,0 +1,14 @@
+running develop
+running egg_info
+writing primo_arm_r01.egg-info/PKG-INFO
+writing dependency_links to primo_arm_r01.egg-info/dependency_links.txt
+writing entry points to primo_arm_r01.egg-info/entry_points.txt
+writing requirements to primo_arm_r01.egg-info/requires.txt
+writing top-level names to primo_arm_r01.egg-info/top_level.txt
+reading manifest file 'primo_arm_r01.egg-info/SOURCES.txt'
+writing manifest file 'primo_arm_r01.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/jeff/ros2_ws/install/primo-arm-r01/lib/python3.10/site-packages/primo-arm-r01.egg-link (link to .)
+
+Installed /home/jeff/ros2_ws/build/primo-arm-r01
+running symlink_data

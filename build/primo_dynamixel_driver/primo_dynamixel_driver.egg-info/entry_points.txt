@@ -1,0 +1,3 @@
+[console_scripts]
+joint_publisher = primo_dynamixel_driver.joint_publisher:main
+

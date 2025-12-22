@@ -1,0 +1,108 @@
+[0.000000] (-) TimerEvent: {}
+[0.000588] (primo-arm-r00) JobQueued: {'identifier': 'primo-arm-r00', 'dependencies': OrderedDict()}
+[0.000781] (primo-arm-r01) JobQueued: {'identifier': 'primo-arm-r01', 'dependencies': OrderedDict()}
+[0.000836] (primo_dynamixel_driver) JobQueued: {'identifier': 'primo_dynamixel_driver', 'dependencies': OrderedDict()}
+[0.000889] (primo-arm-r00) JobStarted: {'identifier': 'primo-arm-r00'}
+[0.017241] (primo-arm-r01) JobStarted: {'identifier': 'primo-arm-r01'}
+[0.025887] (primo_dynamixel_driver) JobStarted: {'identifier': 'primo_dynamixel_driver'}
+[0.098953] (-) TimerEvent: {}
+[0.199280] (-) TimerEvent: {}
+[0.299655] (-) TimerEvent: {}
+[0.400026] (-) TimerEvent: {}
+[0.500385] (-) TimerEvent: {}
+[0.600696] (-) TimerEvent: {}
+[0.701089] (-) TimerEvent: {}
+[0.801490] (-) TimerEvent: {}
+[0.901899] (-) TimerEvent: {}
+[1.002316] (-) TimerEvent: {}
+[1.102709] (-) TimerEvent: {}
+[1.203088] (-) TimerEvent: {}
+[1.303450] (-) TimerEvent: {}
+[1.403892] (-) TimerEvent: {}
+[1.504254] (-) TimerEvent: {}
+[1.604681] (-) TimerEvent: {}
+[1.706097] (-) TimerEvent: {}
+[1.807388] (-) TimerEvent: {}
+[1.907889] (-) TimerEvent: {}
+[2.011799] (-) TimerEvent: {}
+[2.115359] (-) TimerEvent: {}
+[2.216568] (-) TimerEvent: {}
+[2.317163] (-) TimerEvent: {}
+[2.417724] (-) TimerEvent: {}
+[2.521348] (-) TimerEvent: {}
+[2.624184] (-) TimerEvent: {}
+[2.725187] (-) TimerEvent: {}
+[2.732979] (primo_dynamixel_driver) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/jeff/ros2_ws/build/primo_dynamixel_driver/build', '--no-deps', 'symlink_data'], 'cwd': '/home/jeff/ros2_ws/build/primo_dynamixel_driver', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'jeff', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/jeff', 'OLDPWD': '/home/jeff/ros2_ws', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1475', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/jeff/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'jeff', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'jeff', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/NUC6i3:@/tmp/.ICE-unix/1453,unix/NUC6i3:/tmp/.ICE-unix/1453', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/cf440558_97b2_4e7c_889d_5d96d35bc590', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.A7VUH3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.283', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/jeff/ros2_ws/install/primo_dynamixel_driver:/home/jeff/ros2_ws/install/primo-arm-r01:/home/jeff/ros2_ws/install/primo-arm-r00:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/jeff/ros2_ws/build/primo_dynamixel_driver', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/jeff/ros2_ws/build/primo_dynamixel_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jeff/ros2_ws/install/primo_dynamixel_driver/lib/python3.10/site-packages:/home/jeff/ros2_ws/build/primo_dynamixel_driver:/home/jeff/ros2_ws/install/primo_dynamixel_driver/lib/python3.10/site-packages:/home/jeff/ros2_ws/build/primo-arm-r01:/home/jeff/ros2_ws/install/primo-arm-r01/lib/python3.10/site-packages:/home/jeff/ros2_ws/build/primo-arm-r00:/home/jeff/ros2_ws/install/primo-arm-r00/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[2.775247] (primo-arm-r00) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/jeff/ros2_ws/build/primo-arm-r00/build', '--no-deps', 'symlink_data'], 'cwd': '/home/jeff/ros2_ws/build/primo-arm-r00', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'jeff', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/jeff', 'OLDPWD': '/home/jeff/ros2_ws', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1475', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/jeff/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'jeff', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'jeff', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/NUC6i3:@/tmp/.ICE-unix/1453,unix/NUC6i3:/tmp/.ICE-unix/1453', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/cf440558_97b2_4e7c_889d_5d96d35bc590', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.A7VUH3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.283', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/jeff/ros2_ws/install/primo_dynamixel_driver:/home/jeff/ros2_ws/install/primo-arm-r01:/home/jeff/ros2_ws/install/primo-arm-r00:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/jeff/ros2_ws/build/primo-arm-r00', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/jeff/ros2_ws/build/primo-arm-r00/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jeff/ros2_ws/install/primo-arm-r00/lib/python3.10/site-packages:/home/jeff/ros2_ws/build/primo_dynamixel_driver:/home/jeff/ros2_ws/install/primo_dynamixel_driver/lib/python3.10/site-packages:/home/jeff/ros2_ws/build/primo-arm-r01:/home/jeff/ros2_ws/install/primo-arm-r01/lib/python3.10/site-packages:/home/jeff/ros2_ws/build/primo-arm-r00:/home/jeff/ros2_ws/install/primo-arm-r00/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[2.826352] (-) TimerEvent: {}
+[2.927454] (-) TimerEvent: {}
+[3.029176] (-) TimerEvent: {}
+[3.046704] (primo-arm-r01) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/jeff/ros2_ws/build/primo-arm-r01/build', '--no-deps', 'symlink_data'], 'cwd': '/home/jeff/ros2_ws/build/primo-arm-r01', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'jeff', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/jeff', 'OLDPWD': '/home/jeff/ros2_ws', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1475', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/jeff/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'jeff', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'jeff', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/NUC6i3:@/tmp/.ICE-unix/1453,unix/NUC6i3:/tmp/.ICE-unix/1453', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/cf440558_97b2_4e7c_889d_5d96d35bc590', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.A7VUH3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.283', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/jeff/ros2_ws/install/primo_dynamixel_driver:/home/jeff/ros2_ws/install/primo-arm-r01:/home/jeff/ros2_ws/install/primo-arm-r00:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/jeff/ros2_ws/build/primo-arm-r01', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/jeff/ros2_ws/build/primo-arm-r01/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jeff/ros2_ws/install/primo-arm-r01/lib/python3.10/site-packages:/home/jeff/ros2_ws/build/primo_dynamixel_driver:/home/jeff/ros2_ws/install/primo_dynamixel_driver/lib/python3.10/site-packages:/home/jeff/ros2_ws/build/primo-arm-r01:/home/jeff/ros2_ws/install/primo-arm-r01/lib/python3.10/site-packages:/home/jeff/ros2_ws/build/primo-arm-r00:/home/jeff/ros2_ws/install/primo-arm-r00/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[3.129295] (-) TimerEvent: {}
+[3.229693] (-) TimerEvent: {}
+[3.332273] (-) TimerEvent: {}
+[3.433253] (-) TimerEvent: {}
+[3.535087] (-) TimerEvent: {}
+[3.588191] (primo_dynamixel_driver) StdoutLine: {'line': b'running develop\n'}
+[3.635187] (-) TimerEvent: {}
+[3.737178] (-) TimerEvent: {}
+[3.837727] (-) TimerEvent: {}
+[3.891897] (primo-arm-r00) StdoutLine: {'line': b'running develop\n'}
+[3.938172] (-) TimerEvent: {}
+[4.039725] (-) TimerEvent: {}
+[4.115246] (primo_dynamixel_driver) StdoutLine: {'line': b'running egg_info\n'}
+[4.115560] (primo_dynamixel_driver) StdoutLine: {'line': b'writing primo_dynamixel_driver.egg-info/PKG-INFO\n'}
+[4.125189] (primo_dynamixel_driver) StdoutLine: {'line': b'writing dependency_links to primo_dynamixel_driver.egg-info/dependency_links.txt\n'}
+[4.125489] (primo_dynamixel_driver) StdoutLine: {'line': b'writing entry points to primo_dynamixel_driver.egg-info/entry_points.txt\n'}
+[4.125675] (primo_dynamixel_driver) StdoutLine: {'line': b'writing requirements to primo_dynamixel_driver.egg-info/requires.txt\n'}
+[4.125849] (primo_dynamixel_driver) StdoutLine: {'line': b'writing top-level names to primo_dynamixel_driver.egg-info/top_level.txt\n'}
+[4.126021] (primo_dynamixel_driver) StdoutLine: {'line': b"reading manifest file 'primo_dynamixel_driver.egg-info/SOURCES.txt'\n"}
+[4.126208] (primo_dynamixel_driver) StdoutLine: {'line': b"writing manifest file 'primo_dynamixel_driver.egg-info/SOURCES.txt'\n"}
+[4.129573] (primo_dynamixel_driver) StdoutLine: {'line': b'running build_ext\n'}
+[4.133207] (primo_dynamixel_driver) StdoutLine: {'line': b'Creating /home/jeff/ros2_ws/install/primo_dynamixel_driver/lib/python3.10/site-packages/primo-dynamixel-driver.egg-link (link to .)\n'}
+[4.133491] (primo_dynamixel_driver) StdoutLine: {'line': b'Installing joint_publisher script to /home/jeff/ros2_ws/install/primo_dynamixel_driver/lib/primo_dynamixel_driver\n'}
+[4.133682] (primo_dynamixel_driver) StdoutLine: {'line': b'\n'}
+[4.133847] (primo_dynamixel_driver) StdoutLine: {'line': b'Installed /home/jeff/ros2_ws/build/primo_dynamixel_driver\n'}
+[4.134008] (primo_dynamixel_driver) StdoutLine: {'line': b'running symlink_data\n'}
+[4.142173] (-) TimerEvent: {}
+[4.224406] (primo_dynamixel_driver) CommandEnded: {'returncode': 0}
+[4.243171] (-) TimerEvent: {}
+[4.315982] (primo_dynamixel_driver) JobEnded: {'identifier': 'primo_dynamixel_driver', 'rc': 0}
+[4.343286] (-) TimerEvent: {}
+[4.444293] (-) TimerEvent: {}
+[4.456069] (primo-arm-r00) StdoutLine: {'line': b'running egg_info\n'}
+[4.456857] (primo-arm-r00) StdoutLine: {'line': b'writing primo_arm_r00.egg-info/PKG-INFO\n'}
+[4.457310] (primo-arm-r00) StdoutLine: {'line': b'writing dependency_links to primo_arm_r00.egg-info/dependency_links.txt\n'}
+[4.457508] (primo-arm-r00) StdoutLine: {'line': b'writing entry points to primo_arm_r00.egg-info/entry_points.txt\n'}
+[4.457676] (primo-arm-r00) StdoutLine: {'line': b'writing requirements to primo_arm_r00.egg-info/requires.txt\n'}
+[4.457836] (primo-arm-r00) StdoutLine: {'line': b'writing top-level names to primo_arm_r00.egg-info/top_level.txt\n'}
+[4.459702] (primo-arm-r00) StdoutLine: {'line': b"reading manifest file 'primo_arm_r00.egg-info/SOURCES.txt'\n"}
+[4.461556] (primo-arm-r00) StdoutLine: {'line': b"writing manifest file 'primo_arm_r00.egg-info/SOURCES.txt'\n"}
+[4.463148] (primo-arm-r00) StdoutLine: {'line': b'running build_ext\n'}
+[4.463514] (primo-arm-r00) StdoutLine: {'line': b'Creating /home/jeff/ros2_ws/install/primo-arm-r00/lib/python3.10/site-packages/primo-arm-r00.egg-link (link to .)\n'}
+[4.466106] (primo-arm-r00) StdoutLine: {'line': b'\n'}
+[4.466609] (primo-arm-r00) StdoutLine: {'line': b'Installed /home/jeff/ros2_ws/build/primo-arm-r00\n'}
+[4.466869] (primo-arm-r00) StdoutLine: {'line': b'running symlink_data\n'}
+[4.469351] (primo-arm-r01) StdoutLine: {'line': b'running develop\n'}
+[4.522105] (primo-arm-r00) CommandEnded: {'returncode': 0}
+[4.542795] (primo-arm-r00) JobEnded: {'identifier': 'primo-arm-r00', 'rc': 0}
+[4.544399] (-) TimerEvent: {}
+[4.644670] (-) TimerEvent: {}
+[4.744991] (-) TimerEvent: {}
+[4.809019] (primo-arm-r01) StdoutLine: {'line': b'running egg_info\n'}
+[4.809319] (primo-arm-r01) StdoutLine: {'line': b'writing primo_arm_r01.egg-info/PKG-INFO\n'}
+[4.809708] (primo-arm-r01) StdoutLine: {'line': b'writing dependency_links to primo_arm_r01.egg-info/dependency_links.txt\n'}
+[4.810002] (primo-arm-r01) StdoutLine: {'line': b'writing entry points to primo_arm_r01.egg-info/entry_points.txt\n'}
+[4.810313] (primo-arm-r01) StdoutLine: {'line': b'writing requirements to primo_arm_r01.egg-info/requires.txt\n'}
+[4.810503] (primo-arm-r01) StdoutLine: {'line': b'writing top-level names to primo_arm_r01.egg-info/top_level.txt\n'}
+[4.812230] (primo-arm-r01) StdoutLine: {'line': b"reading manifest file 'primo_arm_r01.egg-info/SOURCES.txt'\n"}
+[4.814049] (primo-arm-r01) StdoutLine: {'line': b"writing manifest file 'primo_arm_r01.egg-info/SOURCES.txt'\n"}
+[4.817258] (primo-arm-r01) StdoutLine: {'line': b'running build_ext\n'}
+[4.819221] (primo-arm-r01) StdoutLine: {'line': b'Creating /home/jeff/ros2_ws/install/primo-arm-r01/lib/python3.10/site-packages/primo-arm-r01.egg-link (link to .)\n'}
+[4.820929] (primo-arm-r01) StdoutLine: {'line': b'\n'}
+[4.821189] (primo-arm-r01) StdoutLine: {'line': b'Installed /home/jeff/ros2_ws/build/primo-arm-r01\n'}
+[4.821296] (primo-arm-r01) StdoutLine: {'line': b'running symlink_data\n'}
+[4.845097] (-) TimerEvent: {}
+[4.872671] (primo-arm-r01) CommandEnded: {'returncode': 0}
+[4.888286] (primo-arm-r01) JobEnded: {'identifier': 'primo-arm-r01', 'rc': 0}
+[4.889630] (-) EventReactorShutdown: {}

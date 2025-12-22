@@ -1,0 +1,17 @@
+[2.708s] Invoking command in '/home/jeff/ros2_ws/build/primo_dynamixel_driver': PYTHONPATH=/home/jeff/ros2_ws/build/primo_dynamixel_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jeff/ros2_ws/install/primo_dynamixel_driver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jeff/ros2_ws/build/primo_dynamixel_driver/build --no-deps symlink_data
+[3.563s] running develop
+[4.090s] running egg_info
+[4.090s] writing primo_dynamixel_driver.egg-info/PKG-INFO
+[4.099s] writing dependency_links to primo_dynamixel_driver.egg-info/dependency_links.txt
+[4.100s] writing entry points to primo_dynamixel_driver.egg-info/entry_points.txt
+[4.100s] writing requirements to primo_dynamixel_driver.egg-info/requires.txt
+[4.100s] writing top-level names to primo_dynamixel_driver.egg-info/top_level.txt
+[4.100s] reading manifest file 'primo_dynamixel_driver.egg-info/SOURCES.txt'
+[4.101s] writing manifest file 'primo_dynamixel_driver.egg-info/SOURCES.txt'
+[4.104s] running build_ext
+[4.107s] Creating /home/jeff/ros2_ws/install/primo_dynamixel_driver/lib/python3.10/site-packages/primo-dynamixel-driver.egg-link (link to .)
+[4.108s] Installing joint_publisher script to /home/jeff/ros2_ws/install/primo_dynamixel_driver/lib/primo_dynamixel_driver
+[4.108s] 
+[4.108s] Installed /home/jeff/ros2_ws/build/primo_dynamixel_driver
+[4.108s] running symlink_data
+[4.199s] Invoked command in '/home/jeff/ros2_ws/build/primo_dynamixel_driver' returned '0': PYTHONPATH=/home/jeff/ros2_ws/build/primo_dynamixel_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jeff/ros2_ws/install/primo_dynamixel_driver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jeff/ros2_ws/build/primo_dynamixel_driver/build --no-deps symlink_data

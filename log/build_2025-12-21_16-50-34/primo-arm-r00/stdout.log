@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/primo-arm-r00/primo_arm_r00.egg-info
+writing ../../build/primo-arm-r00/primo_arm_r00.egg-info/PKG-INFO
+writing dependency_links to ../../build/primo-arm-r00/primo_arm_r00.egg-info/dependency_links.txt
+writing entry points to ../../build/primo-arm-r00/primo_arm_r00.egg-info/entry_points.txt
+writing requirements to ../../build/primo-arm-r00/primo_arm_r00.egg-info/requires.txt
+writing top-level names to ../../build/primo-arm-r00/primo_arm_r00.egg-info/top_level.txt
+writing manifest file '../../build/primo-arm-r00/primo_arm_r00.egg-info/SOURCES.txt'
+reading manifest file '../../build/primo-arm-r00/primo_arm_r00.egg-info/SOURCES.txt'
+writing manifest file '../../build/primo-arm-r00/primo_arm_r00.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/jeff/ros2_ws/build/primo-arm-r00/build
+creating /home/jeff/ros2_ws/build/primo-arm-r00/build/lib
+creating /home/jeff/ros2_ws/build/primo-arm-r00/build/lib/primo-arm-r00
+copying primo-arm-r00/__init__.py -> /home/jeff/ros2_ws/build/primo-arm-r00/build/lib/primo-arm-r00
+running install
+running install_lib
+creating /home/jeff/ros2_ws/install/primo-arm-r00/lib/python3.10/site-packages/primo-arm-r00
+copying /home/jeff/ros2_ws/build/primo-arm-r00/build/lib/primo-arm-r00/__init__.py -> /home/jeff/ros2_ws/install/primo-arm-r00/lib/python3.10/site-packages/primo-arm-r00
+byte-compiling /home/jeff/ros2_ws/install/primo-arm-r00/lib/python3.10/site-packages/primo-arm-r00/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/jeff/ros2_ws/install/primo-arm-r00/share/ament_index
+creating /home/jeff/ros2_ws/install/primo-arm-r00/share/ament_index/resource_index
+creating /home/jeff/ros2_ws/install/primo-arm-r00/share/ament_index/resource_index/packages
+copying resource/primo-arm-r00 -> /home/jeff/ros2_ws/install/primo-arm-r00/share/ament_index/resource_index/packages
+copying package.xml -> /home/jeff/ros2_ws/install/primo-arm-r00/share/primo-arm-r00
+creating /home/jeff/ros2_ws/install/primo-arm-r00/share/primo-arm-r00/launch
+copying launch/display.launch.py -> /home/jeff/ros2_ws/install/primo-arm-r00/share/primo-arm-r00/launch
+creating /home/jeff/ros2_ws/install/primo-arm-r00/share/primo-arm-r00/urdf
+copying urdf/arm.urdf -> /home/jeff/ros2_ws/install/primo-arm-r00/share/primo-arm-r00/urdf
+running install_egg_info
+Copying ../../build/primo-arm-r00/primo_arm_r00.egg-info to /home/jeff/ros2_ws/install/primo-arm-r00/lib/python3.10/site-packages/primo_arm_r00-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/jeff/ros2_ws/build/primo-arm-r00/install.log'

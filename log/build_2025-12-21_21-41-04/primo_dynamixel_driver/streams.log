@@ -1,0 +1,20 @@
+[2.511s] Invoking command in '/home/jeff/ros2_ws/build/primo_dynamixel_driver': PYTHONPATH=/home/jeff/ros2_ws/build/primo_dynamixel_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jeff/ros2_ws/install/primo_dynamixel_driver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jeff/ros2_ws/build/primo_dynamixel_driver/build --no-deps symlink_data
+[3.363s] running develop
+[3.811s] running egg_info
+[3.814s] creating primo_dynamixel_driver.egg-info
+[3.815s] writing primo_dynamixel_driver.egg-info/PKG-INFO
+[3.815s] writing dependency_links to primo_dynamixel_driver.egg-info/dependency_links.txt
+[3.815s] writing entry points to primo_dynamixel_driver.egg-info/entry_points.txt
+[3.815s] writing requirements to primo_dynamixel_driver.egg-info/requires.txt
+[3.816s] writing top-level names to primo_dynamixel_driver.egg-info/top_level.txt
+[3.816s] writing manifest file 'primo_dynamixel_driver.egg-info/SOURCES.txt'
+[3.818s] reading manifest file 'primo_dynamixel_driver.egg-info/SOURCES.txt'
+[3.819s] writing manifest file 'primo_dynamixel_driver.egg-info/SOURCES.txt'
+[3.823s] running build_ext
+[3.823s] Creating /home/jeff/ros2_ws/install/primo_dynamixel_driver/lib/python3.10/site-packages/primo-dynamixel-driver.egg-link (link to .)
+[3.825s] Installing joint_publisher script to /home/jeff/ros2_ws/install/primo_dynamixel_driver/lib/primo_dynamixel_driver
+[3.826s] 
+[3.826s] Installed /home/jeff/ros2_ws/build/primo_dynamixel_driver
+[3.826s] running symlink_data
+[3.827s] symbolically linking /home/jeff/ros2_ws/build/primo_dynamixel_driver/package.xml -> /home/jeff/ros2_ws/install/primo_dynamixel_driver/share/primo_dynamixel_driver
+[3.886s] Invoked command in '/home/jeff/ros2_ws/build/primo_dynamixel_driver' returned '0': PYTHONPATH=/home/jeff/ros2_ws/build/primo_dynamixel_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jeff/ros2_ws/install/primo_dynamixel_driver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jeff/ros2_ws/build/primo_dynamixel_driver/build --no-deps symlink_data

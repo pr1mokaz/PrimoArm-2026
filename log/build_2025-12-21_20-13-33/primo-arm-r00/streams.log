@@ -1,0 +1,20 @@
+[1.028s] Invoking command in '/home/jeff/ros2_ws/build/primo-arm-r00': PYTHONPATH=/home/jeff/ros2_ws/build/primo-arm-r00/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jeff/ros2_ws/install/primo-arm-r00/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jeff/ros2_ws/build/primo-arm-r00/build --no-deps symlink_data --force
+[1.458s] running develop
+[1.721s] running egg_info
+[1.721s] writing primo_arm_r00.egg-info/PKG-INFO
+[1.721s] writing dependency_links to primo_arm_r00.egg-info/dependency_links.txt
+[1.722s] writing entry points to primo_arm_r00.egg-info/entry_points.txt
+[1.722s] writing requirements to primo_arm_r00.egg-info/requires.txt
+[1.722s] writing top-level names to primo_arm_r00.egg-info/top_level.txt
+[1.726s] reading manifest file 'primo_arm_r00.egg-info/SOURCES.txt'
+[1.727s] writing manifest file 'primo_arm_r00.egg-info/SOURCES.txt'
+[1.729s] running build_ext
+[1.730s] Creating /home/jeff/ros2_ws/install/primo-arm-r00/lib/python3.10/site-packages/primo-arm-r00.egg-link (link to .)
+[1.732s] 
+[1.732s] Installed /home/jeff/ros2_ws/build/primo-arm-r00
+[1.732s] running symlink_data
+[1.733s] symbolically linking /home/jeff/ros2_ws/build/primo-arm-r00/resource/primo-arm-r00 -> /home/jeff/ros2_ws/install/primo-arm-r00/share/ament_index/resource_index/packages
+[1.733s] symbolically linking /home/jeff/ros2_ws/build/primo-arm-r00/package.xml -> /home/jeff/ros2_ws/install/primo-arm-r00/share/primo-arm-r00
+[1.733s] symbolically linking /home/jeff/ros2_ws/build/primo-arm-r00/launch/display.launch.py -> /home/jeff/ros2_ws/install/primo-arm-r00/share/primo-arm-r00/launch
+[1.733s] symbolically linking /home/jeff/ros2_ws/build/primo-arm-r00/urdf/arm.urdf.xacro -> /home/jeff/ros2_ws/install/primo-arm-r00/share/primo-arm-r00/urdf
+[1.775s] Invoked command in '/home/jeff/ros2_ws/build/primo-arm-r00' returned '0': PYTHONPATH=/home/jeff/ros2_ws/build/primo-arm-r00/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jeff/ros2_ws/install/primo-arm-r00/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jeff/ros2_ws/build/primo-arm-r00/build --no-deps symlink_data --force

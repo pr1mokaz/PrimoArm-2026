@@ -1,0 +1,240 @@
+[0.253s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.253s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x73d053a178b0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x73d053bcc4c0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x73d053bcc4c0>>)
+[0.626s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.626s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.626s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.626s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.626s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.626s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.626s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/jeff/ros2_ws'
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.657s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.658s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.658s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.658s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.658s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.658s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.659s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.659s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.659s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.659s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.659s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(src/primo-arm-r00) by extensions ['ignore', 'ignore_ament_install']
+[0.662s] Level 1:colcon.colcon_core.package_identification:_identify(src/primo-arm-r00) by extension 'ignore'
+[0.662s] Level 1:colcon.colcon_core.package_identification:_identify(src/primo-arm-r00) by extension 'ignore_ament_install'
+[0.662s] Level 1:colcon.colcon_core.package_identification:_identify(src/primo-arm-r00) by extensions ['colcon_pkg']
+[0.662s] Level 1:colcon.colcon_core.package_identification:_identify(src/primo-arm-r00) by extension 'colcon_pkg'
+[0.662s] Level 1:colcon.colcon_core.package_identification:_identify(src/primo-arm-r00) by extensions ['colcon_meta']
+[0.662s] Level 1:colcon.colcon_core.package_identification:_identify(src/primo-arm-r00) by extension 'colcon_meta'
+[0.662s] Level 1:colcon.colcon_core.package_identification:_identify(src/primo-arm-r00) by extensions ['ros']
+[0.662s] Level 1:colcon.colcon_core.package_identification:_identify(src/primo-arm-r00) by extension 'ros'
+[0.666s] DEBUG:colcon.colcon_core.package_identification:Package 'src/primo-arm-r00' with type 'ros.ament_python' and name 'primo-arm-r00'
+[0.666s] Level 1:colcon.colcon_core.package_identification:_identify(src/primo-arm-r01) by extensions ['ignore', 'ignore_ament_install']
+[0.666s] Level 1:colcon.colcon_core.package_identification:_identify(src/primo-arm-r01) by extension 'ignore'
+[0.667s] Level 1:colcon.colcon_core.package_identification:_identify(src/primo-arm-r01) by extension 'ignore_ament_install'
+[0.667s] Level 1:colcon.colcon_core.package_identification:_identify(src/primo-arm-r01) by extensions ['colcon_pkg']
+[0.667s] Level 1:colcon.colcon_core.package_identification:_identify(src/primo-arm-r01) by extension 'colcon_pkg'
+[0.667s] Level 1:colcon.colcon_core.package_identification:_identify(src/primo-arm-r01) by extensions ['colcon_meta']
+[0.667s] Level 1:colcon.colcon_core.package_identification:_identify(src/primo-arm-r01) by extension 'colcon_meta'
+[0.667s] Level 1:colcon.colcon_core.package_identification:_identify(src/primo-arm-r01) by extensions ['ros']
+[0.667s] Level 1:colcon.colcon_core.package_identification:_identify(src/primo-arm-r01) by extension 'ros'
+[0.668s] DEBUG:colcon.colcon_core.package_identification:Package 'src/primo-arm-r01' with type 'ros.ament_python' and name 'primo-arm-r01'
+[0.668s] Level 1:colcon.colcon_core.package_identification:_identify(src/primo_dynamixel_driver) by extensions ['ignore', 'ignore_ament_install']
+[0.669s] Level 1:colcon.colcon_core.package_identification:_identify(src/primo_dynamixel_driver) by extension 'ignore'
+[0.669s] Level 1:colcon.colcon_core.package_identification:_identify(src/primo_dynamixel_driver) by extension 'ignore_ament_install'
+[0.669s] Level 1:colcon.colcon_core.package_identification:_identify(src/primo_dynamixel_driver) by extensions ['colcon_pkg']
+[0.669s] Level 1:colcon.colcon_core.package_identification:_identify(src/primo_dynamixel_driver) by extension 'colcon_pkg'
+[0.669s] Level 1:colcon.colcon_core.package_identification:_identify(src/primo_dynamixel_driver) by extensions ['colcon_meta']
+[0.669s] Level 1:colcon.colcon_core.package_identification:_identify(src/primo_dynamixel_driver) by extension 'colcon_meta'
+[0.670s] Level 1:colcon.colcon_core.package_identification:_identify(src/primo_dynamixel_driver) by extensions ['ros']
+[0.670s] Level 1:colcon.colcon_core.package_identification:_identify(src/primo_dynamixel_driver) by extension 'ros'
+[0.671s] DEBUG:colcon.colcon_core.package_identification:Package 'src/primo_dynamixel_driver' with type 'ros.ament_python' and name 'primo_dynamixel_driver'
+[0.672s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.672s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.672s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.672s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.672s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.719s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.719s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.723s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 320 installed packages in /opt/ros/humble
+[0.747s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.839s] Level 5:colcon.colcon_core.verb:set package 'primo-arm-r00' build argument 'cmake_args' from command line to 'None'
+[0.840s] Level 5:colcon.colcon_core.verb:set package 'primo-arm-r00' build argument 'cmake_target' from command line to 'None'
+[0.840s] Level 5:colcon.colcon_core.verb:set package 'primo-arm-r00' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.840s] Level 5:colcon.colcon_core.verb:set package 'primo-arm-r00' build argument 'cmake_clean_cache' from command line to 'False'
+[0.840s] Level 5:colcon.colcon_core.verb:set package 'primo-arm-r00' build argument 'cmake_clean_first' from command line to 'False'
+[0.840s] Level 5:colcon.colcon_core.verb:set package 'primo-arm-r00' build argument 'cmake_force_configure' from command line to 'False'
+[0.840s] Level 5:colcon.colcon_core.verb:set package 'primo-arm-r00' build argument 'ament_cmake_args' from command line to 'None'
+[0.840s] Level 5:colcon.colcon_core.verb:set package 'primo-arm-r00' build argument 'catkin_cmake_args' from command line to 'None'
+[0.840s] Level 5:colcon.colcon_core.verb:set package 'primo-arm-r00' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.840s] DEBUG:colcon.colcon_core.verb:Building package 'primo-arm-r00' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jeff/ros2_ws/build/primo-arm-r00', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jeff/ros2_ws/install/primo-arm-r00', 'merge_install': False, 'path': '/home/jeff/ros2_ws/src/primo-arm-r00', 'symlink_install': True, 'test_result_base': None}
+[0.841s] Level 5:colcon.colcon_core.verb:set package 'primo-arm-r01' build argument 'cmake_args' from command line to 'None'
+[0.841s] Level 5:colcon.colcon_core.verb:set package 'primo-arm-r01' build argument 'cmake_target' from command line to 'None'
+[0.841s] Level 5:colcon.colcon_core.verb:set package 'primo-arm-r01' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.841s] Level 5:colcon.colcon_core.verb:set package 'primo-arm-r01' build argument 'cmake_clean_cache' from command line to 'False'
+[0.841s] Level 5:colcon.colcon_core.verb:set package 'primo-arm-r01' build argument 'cmake_clean_first' from command line to 'False'
+[0.841s] Level 5:colcon.colcon_core.verb:set package 'primo-arm-r01' build argument 'cmake_force_configure' from command line to 'False'
+[0.841s] Level 5:colcon.colcon_core.verb:set package 'primo-arm-r01' build argument 'ament_cmake_args' from command line to 'None'
+[0.841s] Level 5:colcon.colcon_core.verb:set package 'primo-arm-r01' build argument 'catkin_cmake_args' from command line to 'None'
+[0.841s] Level 5:colcon.colcon_core.verb:set package 'primo-arm-r01' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.841s] DEBUG:colcon.colcon_core.verb:Building package 'primo-arm-r01' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jeff/ros2_ws/build/primo-arm-r01', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jeff/ros2_ws/install/primo-arm-r01', 'merge_install': False, 'path': '/home/jeff/ros2_ws/src/primo-arm-r01', 'symlink_install': True, 'test_result_base': None}
+[0.842s] Level 5:colcon.colcon_core.verb:set package 'primo_dynamixel_driver' build argument 'cmake_args' from command line to 'None'
+[0.842s] Level 5:colcon.colcon_core.verb:set package 'primo_dynamixel_driver' build argument 'cmake_target' from command line to 'None'
+[0.842s] Level 5:colcon.colcon_core.verb:set package 'primo_dynamixel_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.842s] Level 5:colcon.colcon_core.verb:set package 'primo_dynamixel_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[0.842s] Level 5:colcon.colcon_core.verb:set package 'primo_dynamixel_driver' build argument 'cmake_clean_first' from command line to 'False'
+[0.842s] Level 5:colcon.colcon_core.verb:set package 'primo_dynamixel_driver' build argument 'cmake_force_configure' from command line to 'False'
+[0.842s] Level 5:colcon.colcon_core.verb:set package 'primo_dynamixel_driver' build argument 'ament_cmake_args' from command line to 'None'
+[0.842s] Level 5:colcon.colcon_core.verb:set package 'primo_dynamixel_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[0.842s] Level 5:colcon.colcon_core.verb:set package 'primo_dynamixel_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.842s] DEBUG:colcon.colcon_core.verb:Building package 'primo_dynamixel_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jeff/ros2_ws/build/primo_dynamixel_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jeff/ros2_ws/install/primo_dynamixel_driver', 'merge_install': False, 'path': '/home/jeff/ros2_ws/src/primo_dynamixel_driver', 'symlink_install': True, 'test_result_base': None}
+[0.843s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.845s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.845s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/jeff/ros2_ws/src/primo-arm-r00' with build type 'ament_python'
+[0.846s] Level 1:colcon.colcon_core.shell:create_environment_hook('primo-arm-r00', 'ament_prefix_path')
+[0.850s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.851s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeff/ros2_ws/install/primo-arm-r00/share/primo-arm-r00/hook/ament_prefix_path.ps1'
+[0.853s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jeff/ros2_ws/install/primo-arm-r00/share/primo-arm-r00/hook/ament_prefix_path.dsv'
+[0.854s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeff/ros2_ws/install/primo-arm-r00/share/primo-arm-r00/hook/ament_prefix_path.sh'
+[0.855s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.855s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.862s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/jeff/ros2_ws/src/primo-arm-r01' with build type 'ament_python'
+[0.862s] Level 1:colcon.colcon_core.shell:create_environment_hook('primo-arm-r01', 'ament_prefix_path')
+[0.863s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeff/ros2_ws/install/primo-arm-r01/share/primo-arm-r01/hook/ament_prefix_path.ps1'
+[0.864s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jeff/ros2_ws/install/primo-arm-r01/share/primo-arm-r01/hook/ament_prefix_path.dsv'
+[0.865s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeff/ros2_ws/install/primo-arm-r01/share/primo-arm-r01/hook/ament_prefix_path.sh'
+[0.866s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.866s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.871s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/jeff/ros2_ws/src/primo_dynamixel_driver' with build type 'ament_python'
+[0.871s] Level 1:colcon.colcon_core.shell:create_environment_hook('primo_dynamixel_driver', 'ament_prefix_path')
+[0.872s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeff/ros2_ws/install/primo_dynamixel_driver/share/primo_dynamixel_driver/hook/ament_prefix_path.ps1'
+[0.874s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jeff/ros2_ws/install/primo_dynamixel_driver/share/primo_dynamixel_driver/hook/ament_prefix_path.dsv'
+[0.876s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeff/ros2_ws/install/primo_dynamixel_driver/share/primo_dynamixel_driver/hook/ament_prefix_path.sh'
+[0.878s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.878s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.475s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/jeff/ros2_ws/src/primo-arm-r00'
+[1.476s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.476s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.029s] WARNING:colcon.colcon_ros.task.ament_python.build:Package 'primo-arm-r01' doesn't explicitly install a marker in the package index (colcon-ros currently does it implicitly but that fallback will be removed in the future)
+[2.029s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/jeff/ros2_ws/src/primo-arm-r01'
+[2.030s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.030s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.576s] WARNING:colcon.colcon_ros.task.ament_python.build:Package 'primo_dynamixel_driver' doesn't explicitly install a marker in the package index (colcon-ros currently does it implicitly but that fallback will be removed in the future)
+[2.576s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/jeff/ros2_ws/src/primo_dynamixel_driver'
+[2.577s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.577s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.785s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jeff/ros2_ws/build/primo_dynamixel_driver': PYTHONPATH=/home/jeff/ros2_ws/build/primo_dynamixel_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jeff/ros2_ws/install/primo_dynamixel_driver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jeff/ros2_ws/build/primo_dynamixel_driver/build --no-deps symlink_data
+[3.845s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jeff/ros2_ws/build/primo-arm-r00': PYTHONPATH=/home/jeff/ros2_ws/build/primo-arm-r00/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jeff/ros2_ws/install/primo-arm-r00/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jeff/ros2_ws/build/primo-arm-r00/build --no-deps symlink_data
+[3.885s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jeff/ros2_ws/build/primo-arm-r01': PYTHONPATH=/home/jeff/ros2_ws/build/primo-arm-r01/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jeff/ros2_ws/install/primo-arm-r01/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jeff/ros2_ws/build/primo-arm-r01/build --no-deps symlink_data
+[5.360s] Level 1:colcon.colcon_core.shell:create_environment_hook('primo_dynamixel_driver', 'pythonpath_develop')
+[5.361s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeff/ros2_ws/build/primo_dynamixel_driver/share/primo_dynamixel_driver/hook/pythonpath_develop.ps1'
+[5.362s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jeff/ros2_ws/build/primo_dynamixel_driver' returned '0': PYTHONPATH=/home/jeff/ros2_ws/build/primo_dynamixel_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jeff/ros2_ws/install/primo_dynamixel_driver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jeff/ros2_ws/build/primo_dynamixel_driver/build --no-deps symlink_data
+[5.363s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jeff/ros2_ws/build/primo_dynamixel_driver/share/primo_dynamixel_driver/hook/pythonpath_develop.dsv'
+[5.364s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeff/ros2_ws/build/primo_dynamixel_driver/share/primo_dynamixel_driver/hook/pythonpath_develop.sh'
+[5.378s] Level 1:colcon.colcon_core.environment:checking '/home/jeff/ros2_ws/install/primo_dynamixel_driver' for CMake module files
+[5.379s] Level 1:colcon.colcon_core.environment:checking '/home/jeff/ros2_ws/install/primo_dynamixel_driver' for CMake config files
+[5.380s] Level 1:colcon.colcon_core.environment:checking '/home/jeff/ros2_ws/install/primo_dynamixel_driver/lib'
+[5.381s] Level 1:colcon.colcon_core.environment:checking '/home/jeff/ros2_ws/install/primo_dynamixel_driver/bin'
+[5.381s] Level 1:colcon.colcon_core.environment:checking '/home/jeff/ros2_ws/install/primo_dynamixel_driver/lib/pkgconfig/primo_dynamixel_driver.pc'
+[5.382s] Level 1:colcon.colcon_core.environment:checking '/home/jeff/ros2_ws/install/primo_dynamixel_driver/lib/python3.10/site-packages'
+[5.382s] Level 1:colcon.colcon_core.shell:create_environment_hook('primo_dynamixel_driver', 'pythonpath')
+[5.383s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeff/ros2_ws/install/primo_dynamixel_driver/share/primo_dynamixel_driver/hook/pythonpath.ps1'
+[5.384s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jeff/ros2_ws/install/primo_dynamixel_driver/share/primo_dynamixel_driver/hook/pythonpath.dsv'
+[5.385s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeff/ros2_ws/install/primo_dynamixel_driver/share/primo_dynamixel_driver/hook/pythonpath.sh'
+[5.387s] Level 1:colcon.colcon_core.environment:checking '/home/jeff/ros2_ws/install/primo_dynamixel_driver/bin'
+[5.387s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(primo_dynamixel_driver)
+[5.388s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeff/ros2_ws/install/primo_dynamixel_driver/share/primo_dynamixel_driver/package.ps1'
+[5.392s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jeff/ros2_ws/install/primo_dynamixel_driver/share/primo_dynamixel_driver/package.dsv'
+[5.394s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeff/ros2_ws/install/primo_dynamixel_driver/share/primo_dynamixel_driver/package.sh'
+[5.396s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeff/ros2_ws/install/primo_dynamixel_driver/share/primo_dynamixel_driver/package.bash'
+[5.398s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeff/ros2_ws/install/primo_dynamixel_driver/share/primo_dynamixel_driver/package.zsh'
+[5.401s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jeff/ros2_ws/install/primo_dynamixel_driver/share/colcon-core/packages/primo_dynamixel_driver)
+[5.474s] Level 1:colcon.colcon_core.shell:create_environment_hook('primo-arm-r01', 'pythonpath_develop')
+[5.476s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeff/ros2_ws/build/primo-arm-r01/share/primo-arm-r01/hook/pythonpath_develop.ps1'
+[5.477s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jeff/ros2_ws/build/primo-arm-r01' returned '0': PYTHONPATH=/home/jeff/ros2_ws/build/primo-arm-r01/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jeff/ros2_ws/install/primo-arm-r01/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jeff/ros2_ws/build/primo-arm-r01/build --no-deps symlink_data
+[5.478s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jeff/ros2_ws/build/primo-arm-r01/share/primo-arm-r01/hook/pythonpath_develop.dsv'
+[5.479s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeff/ros2_ws/build/primo-arm-r01/share/primo-arm-r01/hook/pythonpath_develop.sh'
+[5.481s] Level 1:colcon.colcon_core.environment:checking '/home/jeff/ros2_ws/install/primo-arm-r01' for CMake module files
+[5.483s] Level 1:colcon.colcon_core.environment:checking '/home/jeff/ros2_ws/install/primo-arm-r01' for CMake config files
+[5.484s] Level 1:colcon.colcon_core.environment:checking '/home/jeff/ros2_ws/install/primo-arm-r01/lib'
+[5.484s] Level 1:colcon.colcon_core.environment:checking '/home/jeff/ros2_ws/install/primo-arm-r01/bin'
+[5.484s] Level 1:colcon.colcon_core.environment:checking '/home/jeff/ros2_ws/install/primo-arm-r01/lib/pkgconfig/primo-arm-r01.pc'
+[5.485s] Level 1:colcon.colcon_core.environment:checking '/home/jeff/ros2_ws/install/primo-arm-r01/lib/python3.10/site-packages'
+[5.485s] Level 1:colcon.colcon_core.shell:create_environment_hook('primo-arm-r01', 'pythonpath')
+[5.486s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeff/ros2_ws/install/primo-arm-r01/share/primo-arm-r01/hook/pythonpath.ps1'
+[5.487s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jeff/ros2_ws/install/primo-arm-r01/share/primo-arm-r01/hook/pythonpath.dsv'
+[5.488s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeff/ros2_ws/install/primo-arm-r01/share/primo-arm-r01/hook/pythonpath.sh'
+[5.490s] Level 1:colcon.colcon_core.environment:checking '/home/jeff/ros2_ws/install/primo-arm-r01/bin'
+[5.490s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(primo-arm-r01)
+[5.491s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeff/ros2_ws/install/primo-arm-r01/share/primo-arm-r01/package.ps1'
+[5.494s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jeff/ros2_ws/install/primo-arm-r01/share/primo-arm-r01/package.dsv'
+[5.495s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeff/ros2_ws/install/primo-arm-r01/share/primo-arm-r01/package.sh'
+[5.496s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeff/ros2_ws/install/primo-arm-r01/share/primo-arm-r01/package.bash'
+[5.498s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeff/ros2_ws/install/primo-arm-r01/share/primo-arm-r01/package.zsh'
+[5.498s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jeff/ros2_ws/install/primo-arm-r01/share/colcon-core/packages/primo-arm-r01)
+[5.503s] Level 1:colcon.colcon_core.shell:create_environment_hook('primo-arm-r00', 'pythonpath_develop')
+[5.503s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeff/ros2_ws/build/primo-arm-r00/share/primo-arm-r00/hook/pythonpath_develop.ps1'
+[5.504s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jeff/ros2_ws/build/primo-arm-r00' returned '0': PYTHONPATH=/home/jeff/ros2_ws/build/primo-arm-r00/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jeff/ros2_ws/install/primo-arm-r00/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jeff/ros2_ws/build/primo-arm-r00/build --no-deps symlink_data
+[5.505s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jeff/ros2_ws/build/primo-arm-r00/share/primo-arm-r00/hook/pythonpath_develop.dsv'
+[5.506s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeff/ros2_ws/build/primo-arm-r00/share/primo-arm-r00/hook/pythonpath_develop.sh'
+[5.508s] Level 1:colcon.colcon_core.environment:checking '/home/jeff/ros2_ws/install/primo-arm-r00' for CMake module files
+[5.509s] Level 1:colcon.colcon_core.environment:checking '/home/jeff/ros2_ws/install/primo-arm-r00' for CMake config files
+[5.510s] Level 1:colcon.colcon_core.environment:checking '/home/jeff/ros2_ws/install/primo-arm-r00/lib'
+[5.510s] Level 1:colcon.colcon_core.environment:checking '/home/jeff/ros2_ws/install/primo-arm-r00/bin'
+[5.510s] Level 1:colcon.colcon_core.environment:checking '/home/jeff/ros2_ws/install/primo-arm-r00/lib/pkgconfig/primo-arm-r00.pc'
+[5.510s] Level 1:colcon.colcon_core.environment:checking '/home/jeff/ros2_ws/install/primo-arm-r00/lib/python3.10/site-packages'
+[5.511s] Level 1:colcon.colcon_core.shell:create_environment_hook('primo-arm-r00', 'pythonpath')
+[5.511s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeff/ros2_ws/install/primo-arm-r00/share/primo-arm-r00/hook/pythonpath.ps1'
+[5.513s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jeff/ros2_ws/install/primo-arm-r00/share/primo-arm-r00/hook/pythonpath.dsv'
+[5.514s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeff/ros2_ws/install/primo-arm-r00/share/primo-arm-r00/hook/pythonpath.sh'
+[5.515s] Level 1:colcon.colcon_core.environment:checking '/home/jeff/ros2_ws/install/primo-arm-r00/bin'
+[5.515s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(primo-arm-r00)
+[5.515s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeff/ros2_ws/install/primo-arm-r00/share/primo-arm-r00/package.ps1'
+[5.516s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jeff/ros2_ws/install/primo-arm-r00/share/primo-arm-r00/package.dsv'
+[5.517s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeff/ros2_ws/install/primo-arm-r00/share/primo-arm-r00/package.sh'
+[5.518s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeff/ros2_ws/install/primo-arm-r00/share/primo-arm-r00/package.bash'
+[5.519s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeff/ros2_ws/install/primo-arm-r00/share/primo-arm-r00/package.zsh'
+[5.520s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jeff/ros2_ws/install/primo-arm-r00/share/colcon-core/packages/primo-arm-r00)
+[5.520s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[5.520s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[5.520s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[5.520s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[5.530s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[5.530s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[5.530s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[5.557s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[5.558s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jeff/ros2_ws/install/local_setup.ps1'
+[5.560s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jeff/ros2_ws/install/_local_setup_util_ps1.py'
+[5.562s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jeff/ros2_ws/install/setup.ps1'
+[5.563s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jeff/ros2_ws/install/local_setup.sh'
+[5.564s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jeff/ros2_ws/install/_local_setup_util_sh.py'
+[5.566s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jeff/ros2_ws/install/setup.sh'
+[5.569s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jeff/ros2_ws/install/local_setup.bash'
+[5.570s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jeff/ros2_ws/install/setup.bash'
+[5.572s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jeff/ros2_ws/install/local_setup.zsh'
+[5.575s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jeff/ros2_ws/install/setup.zsh'

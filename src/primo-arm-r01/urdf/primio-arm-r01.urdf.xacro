@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="primio_arm_r01">
+
+  <!-- Basic dimensions -->
+  <xacro:property name="base_height" value="0.055"/>     <!-- 55mm -->
+  <xacro:property name="base_radius" value="0.055"/>      <!-- 110mm diameter -->
+  <xacro:property name="motor_size" value="0.046"/>       <!-- 46mm square face -->
+  <xacro:property name="motor_height" value="0.065"/>     <!-- 65mm tall -->
+  <xacro:property name="motor_offset" value="0.023"/>     <!-- 23mm offset from center -->
+  <xacro:property name="link1_size" value="0.02"/>        <!-- 20mm square -->
+  <xacro:property name="link1_length" value="0.19"/>      <!-- 190mm tall -->
+
+  <!-- Colors -->
+  <material name="gray"><color rgba="0.5 0.5 0.5 1.0"/></material>
+  <material name="blue"><color rgba="0.2 0.2 0.8 1.0"/></material>
+
+  <!-- Base link: stationary cylinder -->
+  <link name="base_link">
+    <visual>
+      <origin xyz="0 0 ${base_height/2}" rpy="0 0 0"/>
+      <geometry>
+        <cylinder length="${base_height}" radius="${base_radius}"/>
+      </geometry>
+      <material name="gray"/>
+    </visual>
+  </link>
+
+  <!-- Joint 1: vertical rotation around Z-axis -->
+  <joint name="joint_9" type="revolute">
+    <parent link="base_link"/>
+    <child link="motor_block"/>
+    <origin xyz="0 0 ${base_height}" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="1.0" lower="-3.14" upper="3.14" velocity="1.0"/>
+  </joint>
+
+  <!-- Motor block: rectangular box mounted on top of base -->
+  <link name="motor_block">
+    <visual>
+      <origin xyz="0 0 ${motor_height/2}" rpy="0 0 0"/>
+      <geometry>
+        <box size="${motor_size} ${motor_size} ${motor_height}"/>
+      </geometry>
+      <material name="blue"/>
+    </visual>
+  </link>
+
+  <!-- Joint 2: horizontal rotation on motor face, offset from center -->
+  <joint name="joint_10" type="revolute">
+    <parent link="motor_block"/>
+    <child link="link_1"/>
+    <origin xyz="${motor_offset} 0 ${base_height + 0.045}" rpy="0 0 0"/>
+    <axis xyz="1 0 0"/>
+    <limit effort="1.0" lower="-3.14" upper="3.14" velocity="1.0"/>
+  </joint>
+
+  <!-- Link 1: vertical rectangular prism -->
+  <link name="link_1">
+    <visual>
+      <origin xyz="0 0 ${link1_length/2}" rpy="0 0 0"/>
+      <geometry>
+        <box size="${link1_size} ${link1_size} ${link1_length}"/>
+      </geometry>
+      <material name="blue"/>
+    </visual>
+  </link>
+
+</robot>
+
