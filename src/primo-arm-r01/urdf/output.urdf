@@ -1,300 +1,272 @@
-<?xml version="1.0"?>
-<robot xmlns:xacro="ros.org" name="primio_arm_r01">
-
-  <!-- Basic dimensions -->
-  <xacro:property name="motor_size" value="0.032"/>
-  <xacro:property name="motor_offset" value="0.016"/>
-  <xacro:property name="motor_height" value="0.050"/>
-  <xacro:property name="link_side" value="0.02"/>
-  <xacro:property name="link1_length" value="0.19"/>
-  <xacro:property name="link2_length" value="0.15"/>
-  <xacro:property name="link3_length" value="0.11"/>
-  <xacro:property name="link4_length" value="0.00"/>
-  
-  <!-- Connection Disc properties -->
-  <xacro:property name="disc_radius" value="0.011"/>
-  <xacro:property name="disc_thickness" value="0.005"/>
-
+<?xml version="1.0" ?>
+<robot name="primio_arm_r01">
   <!-- Colors -->
-  <material name="grey_transparent"><color rgba="0.5 0.5 0.5 0.4"/></material>
-  <material name="black_transparent"><color rgba="0.0 0.0 0.0 0.4"/></material>
-  <material name="blue_transparent"><color rgba="0.2 0.2 0.8 0.4"/></material>
-  <material name="grey"><color rgba="0.5 0.5 0.5 1.0"/></material>
-  <material name="black"><color rgba="0.05 0.05 0.05 1.0"/></material>
-  <material name="blue"><color rgba="0.2 0.2 0.8 1.0"/></material>
-  <material name="yellow"><color rgba="1.0 1.0 0.0 1.0"/></material>
-  <material name="orange"><color rgba="1.0 0.5 0.0 1.0"/></material>
-
+  <material name="grey_transparent">
+    <color rgba="0.5 0.5 0.5 0.4"/>
+  </material>
+  <material name="black_transparent">
+    <color rgba="0.0 0.0 0.0 0.4"/>
+  </material>
+  <material name="blue_transparent">
+    <color rgba="0.2 0.2 0.8 0.4"/>
+  </material>
+  <material name="grey">
+    <color rgba="0.5 0.5 0.5 1.0"/>
+  </material>
+  <material name="black">
+    <color rgba="0.05 0.05 0.05 1.0"/>
+  </material>
+  <material name="blue">
+    <color rgba="0.2 0.2 0.8 1.0"/>
+  </material>
+  <material name="yellow">
+    <color rgba="1.0 1.0 0.0 1.0"/>
+  </material>
+  <material name="orange">
+    <color rgba="1.0 0.5 0.0 1.0"/>
+  </material>
   <!-- World / Ground Reference -->
   <link name="world"/>
-
   <joint name="world_to_base" type="fixed">
     <parent link="world"/>
     <child link="motor_block9"/>
     <!-- No xyz/rpy needed as motor_block9 is already built up from Z=0 -->
-    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
   </joint>
-
   <!-- Optional Visual Floor Plate -->
   <link name="floor_plate">
     <visual>
-      <origin xyz="0 0 -0.001" rpy="0 0 0"/> <!-- Slightly below 0 to avoid flickering -->
+      <origin rpy="0 0 0" xyz="0 0 -0.001"/>
+      <!-- Slightly below 0 to avoid flickering -->
       <geometry>
         <box size="1.0 1.0 0.002"/>
       </geometry>
       <material name="grey_transparent"/>
     </visual>
   </link>
-
   <joint name="floor_joint" type="fixed">
     <parent link="world"/>
     <child link="floor_plate"/>
   </joint>
-
   <!-- Motor block9 (Base - Laying on side, centered) -->
   <link name="motor_block9">
     <visual>
       <!-- REVERTED: Origin is centered at 0,0 and the motor is 46mm high when on its side -->
-      <origin xyz="0 0 ${motor_size/2}" rpy="0 1.5708 0"/>
+      <origin rpy="0 1.5708 0" xyz="0 0 0.016"/>
       <geometry>
-        <box size="${motor_size} ${motor_size} ${motor_height}"/>
+        <box size="0.032 0.032 0.05"/>
       </geometry>
       <material name="black"/>
     </visual>
   </link>
-
   <!-- Disc link representing the joint interface between motor_block9 and motor_block10 -->
   <link name="disc_9">
     <visual>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <cylinder length="${disc_thickness}" radius="${disc_radius}"/>
+        <cylinder length="0.005" radius="0.011"/>
       </geometry>
       <material name="orange"/>
     </visual>
   </link>
-
   <!-- Joint 9: Vertical rotation centered on Motor 9 -->
   <joint name="joint_9" type="revolute">
     <parent link="motor_block9"/>
     <child link="disc_9"/>
     <!-- place joint at the disc center -->
-    <origin xyz="${link_side/2} 0 ${motor_size + disc_thickness/2}" rpy="0 0 0"/>
+    <origin rpy="0 0 0" xyz="0.01 0 0.0345"/>
     <axis xyz="0 0 1"/>
     <limit effort="1.0" lower="-2.618" upper="2.618" velocity="1.0"/>
   </joint>
-
   <!-- Fixed connector: attach motor_block10 to the disc so motor_block10 keeps its previous pose -->
   <joint name="disc9_to_motor_block10" type="fixed">
     <parent link="disc_9"/>
     <child link="motor_block10"/>
-    <origin xyz="0 0 ${disc_thickness/2}" rpy="0 0 0"/>
+    <origin rpy="0 0 0" xyz="0 0 0.0025"/>
   </joint>
-
   <!-- Motor block10 -->
   <link name="motor_block10">
     <!-- (disc visual moved to motor_block9 to represent joint interface) -->
     <visual>
-      <origin xyz="0 0 ${motor_height/2}" rpy="0 0 0"/>
+      <origin rpy="0 0 0" xyz="0 0 0.025"/>
       <geometry>
-        <box size="${motor_size} ${motor_size} ${motor_height}"/>
+        <box size="0.032 0.032 0.05"/>
       </geometry>
       <material name="black"/>
     </visual>
   </link>
-
   <!-- Joint 10 -->
   <joint name="joint_10" type="revolute">
     <parent link="motor_block10"/>
     <child link="link_10"/>
-    <origin xyz="${motor_offset + link_side/2 + disc_thickness} 0 ${motor_height - 0.020}" rpy="0 0 0"/>
+    <origin rpy="0 0 0" xyz="0.031000000000000003 0 0.030000000000000002"/>
     <axis xyz="1 0 0"/>
     <limit effort="1.0" lower="-2.618" upper="2.681" velocity="1.0"/>
   </joint>
-  
-
   <!-- Link 10 -->
   <link name="link_10">
     <!-- Rotating Orange Disc (X-axis) -->
     <visual>
-      <origin xyz="-${link_side/2 + disc_thickness/2} 0 0" rpy="0 1.5708 0"/>
+      <origin rpy="0 1.5708 0" xyz="-0.0125 0 0"/>
       <geometry>
-        <cylinder length="${disc_thickness}" radius="${disc_radius}"/>
+        <cylinder length="0.005" radius="0.011"/>
       </geometry>
       <material name="orange"/>
     </visual>
     <visual>
-      <origin xyz="0 0 ${link1_length/2}" rpy="0 0 0"/>
+      <origin rpy="0 0 0" xyz="0 0 0.095"/>
       <geometry>
-        <box size="${link_side} ${link_side} ${link1_length}"/>
+        <box size="0.02 0.02 0.19"/>
       </geometry>
       <material name="grey"/>
     </visual>
   </link>
-
   <!-- Joint 10.5: Connects link_10 to the start of motor_block11 -->
   <joint name="joint_10_5" type="fixed">
     <parent link="link_10"/>
     <child link="motor_block11"/>
     <!-- Positioned at the very top of link_10 -->
-    <origin xyz="0 0 ${link1_length}" rpy="3.14159 3.14159 0"/>
+    <origin rpy="3.14159 3.14159 0" xyz="0 0 0.19"/>
   </joint>
-
   <!-- Motor block11 -->
   <link name="motor_block11">
     <visual>
       <!-- Centered orange disc at the connection point -->
-      <origin xyz="0 0 ${disc_thickness/2}" rpy="0 0 0"/>
+      <origin rpy="0 0 0" xyz="0 0 0.0025"/>
       <geometry>
-        <cylinder length="${disc_thickness}" radius="${disc_radius}"/>
+        <cylinder length="0.005" radius="0.011"/>
       </geometry>
       <material name="orange"/>
     </visual>
     <visual>
       <!-- Motor body sitting on top of the disc -->
-      <origin xyz="0 0 ${motor_height/2 + disc_thickness}" rpy="0 0 0"/>
+      <origin rpy="0 0 0" xyz="0 0 0.030000000000000002"/>
       <geometry>
-        <box size="${motor_size} ${motor_size} ${motor_height}"/>
+        <box size="0.032 0.032 0.05"/>
       </geometry>
       <material name="black"/>
     </visual>
   </link>
-
   <!-- Joint 11: Rotating link_11 on the side of motor_block11 -->
   <joint name="joint_11" type="revolute">
     <parent link="motor_block11"/>
     <child link="link_11"/>
     <!-- Positioned at the disc center -->
-    <origin xyz="${motor_offset + link_side/2 + disc_thickness} 0 ${motor_height + disc_thickness - 0.020}" rpy="0 0 0"/>
+    <origin rpy="0 0 0" xyz="0.031000000000000003 0 0.035"/>
     <axis xyz="1 0 0"/>
     <limit effort="1.0" lower="-2.618" upper="2.681" velocity="1.0"/>
   </joint>
-  
-
   <!-- Link 11 -->
   <link name="link_11">
     <visual>
-      <origin xyz="-${link_side/2 + disc_thickness/2} 0 0" rpy="0 1.5708 0"/>
+      <origin rpy="0 1.5708 0" xyz="-0.0125 0 0"/>
       <geometry>
-        <cylinder length="${disc_thickness}" radius="${disc_radius}"/>
+        <cylinder length="0.005" radius="0.011"/>
       </geometry>
       <material name="orange"/>
     </visual>
     <visual>
-      <origin xyz="0 0 ${link2_length/2}" rpy="0 0 0"/>
+      <origin rpy="0 0 0" xyz="0 0 0.075"/>
       <geometry>
-        <box size="${link_side} ${link_side} ${link2_length}"/>
+        <box size="0.02 0.02 0.15"/>
       </geometry>
       <material name="grey"/>
     </visual>
   </link>
-
   <!-- Joint 11.5: Connects link_10 to the start of motor_block11 -->
   <joint name="joint_11_5" type="fixed">
     <parent link="link_11"/>
     <child link="motor_block12"/>
     <!-- Positioned at the very top of link_10 -->
-    <origin xyz="0 0 ${link2_length}" rpy="3.14159 3.14159 0"/>
+    <origin rpy="3.14159 3.14159 0" xyz="0 0 0.15"/>
   </joint>
-
   <!-- Motor block12 -->
   <link name="motor_block12">
     <visual>
       <!-- Centered orange disc at the connection point -->
-      <origin xyz="0 0 ${disc_thickness/2}" rpy="0 0 0"/>
+      <origin rpy="0 0 0" xyz="0 0 0.0025"/>
       <geometry>
-        <cylinder length="${disc_thickness}" radius="${disc_radius}"/>
+        <cylinder length="0.005" radius="0.011"/>
       </geometry>
       <material name="orange"/>
     </visual>
     <visual>
       <!-- Motor body sitting on top of the disc -->
-      <origin xyz="0 0 ${motor_height/2 + disc_thickness}" rpy="0 0 0"/>
+      <origin rpy="0 0 0" xyz="0 0 0.030000000000000002"/>
       <geometry>
-        <box size="${motor_size} ${motor_size} ${motor_height}"/>
+        <box size="0.032 0.032 0.05"/>
       </geometry>
       <material name="black"/>
     </visual>
   </link>
-
   <!-- Joint 12: Rotating link_12 on the side of motor_block12 -->
   <joint name="joint_12" type="revolute">
     <parent link="motor_block12"/>
     <child link="link_12"/>
     <!-- Positioned at the disc center -->
-    <origin xyz="${motor_offset + link_side/2 + disc_thickness} 0 ${motor_height + disc_thickness - 0.020}" rpy="0 0 0"/>
+    <origin rpy="0 0 0" xyz="0.031000000000000003 0 0.035"/>
     <axis xyz="1 0 0"/>
     <limit effort="1.0" lower="-2.618" upper="2.681" velocity="1.0"/>
   </joint>
-  
-
   <!-- Link 12 -->
   <link name="link_12">
     <visual>
-      <origin xyz="-${link_side/2 + disc_thickness/2} 0 0" rpy="0 1.5708 0"/>
+      <origin rpy="0 1.5708 0" xyz="-0.0125 0 0"/>
       <geometry>
-        <cylinder length="${disc_thickness}" radius="${disc_radius}"/>
+        <cylinder length="0.005" radius="0.011"/>
       </geometry>
       <material name="orange"/>
     </visual>
     <visual>
-      <origin xyz="0 0 ${link3_length/2}" rpy="0 0 0"/>
+      <origin rpy="0 0 0" xyz="0 0 0.055"/>
       <geometry>
-        <box size="${link_side} ${link_side} ${link3_length}"/>
+        <box size="0.02 0.02 0.11"/>
       </geometry>
       <material name="grey"/>
     </visual>
   </link>
-
   <!-- Joint 12.5: Connects link_10 to the start of motor_block11 -->
   <joint name="joint_12_5" type="fixed">
     <parent link="link_12"/>
     <child link="motor_block13"/>
     <!-- Positioned at the very top of link_10 -->
-    <origin xyz="0 0 ${link3_length}" rpy="3.14159 3.14159 0"/>
+    <origin rpy="3.14159 3.14159 0" xyz="0 0 0.11"/>
   </joint>
-
   <!-- Motor block13 (Tip - Laying on side, centered) -->
   <link name="motor_block13">
     <visual>
       <!-- REVERTED: Origin is centered at 0,0 and the motor is 46mm high when on its side -->
-      <origin xyz="0 0 ${motor_size/2}" rpy="0 1.5708 0"/>
+      <origin rpy="0 1.5708 0" xyz="0 0 0.016"/>
       <geometry>
-        <box size="${motor_size} ${motor_size} ${motor_height}"/>
+        <box size="0.032 0.032 0.05"/>
       </geometry>
       <material name="black"/>
     </visual>
   </link>
-
   <!-- Joint 13: Vertical rotation centered on Motor 13 -->
   <joint name="joint_13" type="revolute">
     <parent link="motor_block13"/>
     <child link="link_13"/>
-    <origin xyz="${link_side/2} 0 ${motor_size + disc_thickness}" rpy="0 0 0"/>
+    <origin rpy="0 0 0" xyz="0.01 0 0.037"/>
     <axis xyz="0 0 1"/>
     <limit effort="1.0" lower="-2.618" upper="2.618" velocity="1.0"/>
   </joint>
-  
-
-    <!-- Link 13 -->
+  <!-- Link 13 -->
   <link name="link_13">
     <visual>
       <!-- <origin xyz="-${link_side/2 + disc_thickness/2} 0 0" rpy="0 1.5708 0"/> -->
-      <origin xyz="-${disc_thickness/2} 0 0" rpy="0 0 0"/>
+      <origin rpy="0 0 0" xyz="-0.0025 0 0"/>
       <geometry>
-        <cylinder length="${disc_thickness}" radius="${disc_radius}"/>
+        <cylinder length="0.005" radius="0.011"/>
       </geometry>
       <material name="orange"/>
     </visual>
     <visual>
-      <origin xyz="0 0 ${link2_length/2}" rpy="0 0 0"/>
+      <origin rpy="0 0 0" xyz="0 0 0.075"/>
       <geometry>
-        <box size="${link_side} ${link_side} ${link4_length}"/>
+        <box size="0.02 0.02 0.0"/>
       </geometry>
       <material name="grey"/>
     </visual>
   </link>
-
-
-
 </robot>
